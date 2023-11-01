@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --main-color: #1f2837;
+  --second-color: #73dec6;
+  --third-color: #2f4466;
+  --call-color: #f15906;
+  --white-color: #ffffff;
+  --mont-alt: "Montserrat Alternates", sans-serif;
+  --mont: "Montserrat", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 81.25rem;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+  font-family: var(--mont-alt);
+  color: var(--second-color);
+  text-align: center;
+  font-weight: 800;
+  text-shadow: -0.04rem 0.04rem 0.1rem #f15906;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/********************************** HERO **************************************/
+
+.hero {
+  background-color: var(--main-color);
+  padding: 2rem 0;
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text h1,
+.hero-text h2 {
+  color: var(--second-color);
+  font-family: var(--mont-alt);
+  font-weight: 900;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.hero-text h2 {
+  font-size: 1.65rem;
+}
+
+.hero-text_buttons {
+  margin: 2rem 0;
+  font-family: var(--mont);
+  font-size: 1rem;
+}
+
+.hero-text_buttons,
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-text_buttons a {
+  background-color: var(--call-color);
+  padding: 0.7rem 0.5rem;
+  color: var(--white-color);
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+.btn-cv {
+  background-color: transparent;
+  border: thin solid var(--call-color);
+  color: var(--white-color);
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-media a {
+  color: var(--call-color);
+  font-size: 2rem;
+}
+
+/************************************** ABOUT ***************************************/
+
+.about {
+  background-color: var(--third-color);
+  padding: 2rem 0;
+}
+
+.about-img {
+  width: 14rem;
+  max-width: 20rem;
+  margin: auto;
+}
+
+.about p {
+  margin-top: 2rem;
+  color: var(--white-color);
+  font-family: var(--mont);
+  text-align: center;
+}
+
+/******************************************* SKILLS *******************************************/
+
+.skills {
+  background-color: var(--main-color);
+  padding: 2rem 0;
+}
+
+.tech-skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tech-skills_list li {
+  border: thin solid var(--second-color);
+  background-color: #ffffff22;
+  border-radius: 0.3rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.3rem var(--call-color);
+}
+
+.tech-skill_img {
+  width: 70%;
+}
+
+/******************************************* PROJECTS *******************************************/
+
+.projects {
+  background-color: var(--third-color);
+  padding: 2rem 0;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card-project {
+  background: linear-gradient(
+    223deg,
+    rgba(93, 93, 179, 0.47) 65.25%,
+    rgba(115, 222, 199, 0.288) 100%
+  );
+  font-family: var(--mont);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem #ffffff2c;
+  max-width: 20rem;
+}
+
+.card-project_buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-project_text_buttons {
+  padding: 1rem;
+}
+
+.card-project_text_buttons p {
+  color: var(--white-color);
+  padding-bottom: 1rem;
+}
+
+.deploy {
+  background-color: var(--call-color);
+  width: 6rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  border-radius: 0.3rem;
+  height: 2.3rem;
+}
+
+.github {
+  color: var(--call-color);
+  font-size: 2.3rem;
+}
+
+/******************************************* CONTACT *******************************************/
+
+.contact {
+  background-color: var(--main-color);
+  padding: 2rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--mont);
+  margin-bottom: 1.5rem;
+}
+
+.form label {
+  color: var(--second-color);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 1.3rem;
+  background-color: #ffffff03;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.5rem;
+  color: var(--white-color);
+  border-bottom: thin solid var(--second-color);
+  outline: none;
+}
+
+.form textarea {
+  font-family: var(--mont);
+  resize: none;
+  border: thin solid var(--second-color);
+}
+
+.to-up {
+  display: flex;
+  justify-content: center;
+}
+
+.to-up a {
+  color: var(--white-color);
+  background-color: var(--call-color);
+  padding: 1.3rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
