@@ -54,7 +54,76 @@ section {
   margin-bottom: 2rem;
 }
 
-/********************************** HERO **************************************/
+/******************************************* HEADER *******************************************/
+
+header > .container {
+  display: none;
+}
+
+.menu-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  display: none;
+}
+
+.menu-mobile_bars {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 100;
+}
+
+.menu-btn {
+  color: var(--white-color);
+  background-color: var(--call-color);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: none;
+  z-index: 100;
+}
+
+.menu-mobile_nav {
+  position: absolute;
+  z-index: 30;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #fafffe, #dafff7);
+  height: 30vh;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 2rem;
+  flex-wrap: wrap;
+  transform: translate(101%, 101%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-mobile_nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--mont);
+  color: var(--call-color);
+}
+
+.menu-mobile_nav a i {
+  font-size: 1.3rem;
+}
+
+.open-menu {
+  transform: translate(0, 0);
+}
+
+/****************************************** HERO *******************************************/
 
 .hero {
   background-color: var(--main-color);

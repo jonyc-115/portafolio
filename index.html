@@ -19,10 +19,29 @@
   <body>
     <header>
       <div class="menu-mobile">
-        <div class="menu">
-          <i class="fa-solid fa-bars"></i>
+        <div class="menu-mobile_bars">
+          <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
         </div>
-        <nav></nav>
+        <nav class="menu-mobile_nav">
+          <a href="#hero"> <i class="fa-solid fa-house"></i> Inicio</a>
+          <a href="#about"> <i class="fa-solid fa-user"></i> Sobre</a>
+          <a href="#skills"> <i class="fa-solid fa-gear"></i> Habilidades</a>
+          <a href="#projects"
+            ><i class="fa-solid fa-diagram-project"></i> Proyectos</a
+          >
+          <a href="#contact"><i class="fa-regular fa-id-badge"></i> Contacto</a>
+        </nav>
+      </div>
+
+      <div class="container">
+        <a href="#hero">JC</a>
+        <nav>
+          <a href="#hero">Inicio</a>
+          <a href="#about">Sobre</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
       </div>
     </header>
     <main>
@@ -65,7 +84,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <div class="soft-skills"></div>
           <div class="tech-skills">
@@ -116,7 +135,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <h2>Proyectos</h2>
           <ul class="projects-list">
@@ -204,7 +223,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2>Contacto</h2>
           <form class="form">
