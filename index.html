@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="menu-mobile">
         <div class="menu-mobile_bars">
           <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
@@ -34,9 +34,9 @@
       </div>
 
       <div class="container">
-        <a href="#hero">JC</a>
-        <nav>
-          <a href="#hero">Inicio</a>
+        <a class="logo" href="#hero">JC</a>
+        <nav class="desk">
+          <a href="#hero" class="active">Inicio</a>
           <a href="#about">Sobre</a>
           <a href="#skills">Habilidades</a>
           <a href="#projects">Proyectos</a>
@@ -52,7 +52,13 @@
             <h2>Frontend Developer</h2>
             <div class="hero-text_buttons">
               <a href="#contact">Contáctame</a>
-              <button class="btn-cv">Descargar CV</button>
+              <a
+                href="./assets/HDV_andrea_castano.pdf"
+                id="linkDescarga"
+                class="btn-cv"
+                download="HDV_andrea_castano.pdf"
+                >Descargar CV</a
+              >
             </div>
             <div class="social-media">
               <a href="https://www.linkedin.com/in/jhonny-cubillos-2bb6001a6/"
@@ -228,16 +234,32 @@
           <h2>Contacto</h2>
           <form class="form">
             <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              pattern="[A-Za-z\s]+"
+              title="Solo se permiten letras y espacios"
+            />
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="\S+@\S+\.\S+"
+              title="Introduce una dirección de correo electrónico válida"
+            />
             <label for="messaege">Mensaje</label>
             <textarea
               name="message"
               id="messaege"
               cols="30"
               rows="10"
+              required
             ></textarea>
+            <input type="submit" value="Enviar" />
           </form>
           <div class="to-up">
             <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
