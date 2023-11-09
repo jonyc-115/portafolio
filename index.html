@@ -61,10 +61,16 @@
               >
             </div>
             <div class="social-media">
-              <a href="https://www.linkedin.com/in/jhonny-cubillos-2bb6001a6/"
+              <a
+                href="https://www.linkedin.com/in/jhonny-cubillos-2bb6001a6/"
+                target="_blank"
+                rel="noopener noreferer"
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
-              <a href="https://github.com/jonyc-115"
+              <a
+                href="https://github.com/jonyc-115"
+                target="_blank"
+                rel="noopener noreferer"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -80,12 +86,13 @@
             <img src="./assets/develop.svg" alt="" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            molestias expedita, voluptates saepe deserunt facere! Odit vitae
-            possimus magnam aliquid, rem sequi laborum commodi nihil, minus
-            cupiditate rerum quaerat impedit ipsam, corporis quam iure quas?
-            Harum debitis vel quaerat aspernatur amet. Quia, perspiciatis omnis
-            assumenda inventore voluptatibus ut recusandae a.
+            Soy una persona naturalmente callada, lo que me ha otorgado la
+            capacidad de escuchar activamente y valorar las perspectivas de los
+            demás en cualquier entorno. Mi enfoque responsable y diligente se
+            refleja en mi manejo de las tareas asignadas, las cuales suelo
+            completar de manera eficiente. Me enorgullezco de trabajar bien en
+            equipo, ya que considero que la colaboración es fundamental para
+            alcanzar objetivos de manera exitosa
           </p>
         </div>
       </section>
@@ -94,7 +101,7 @@
         <div class="container">
           <div class="soft-skills"></div>
           <div class="tech-skills">
-            <h2>Técnicas</h2>
+            <h2>Habilidades</h2>
             <ul class="tech-skills_list">
               <li>
                 <div class="tech-skill_img">
@@ -148,17 +155,24 @@
             <li>
               <figure class="card-project">
                 <div class="card-project_img">
-                  <img src="./assets/prueba_img.png" alt="" />
+                  <img src="./assets/unicas.webp" alt="" />
                 </div>
                 <div class="card-project_text_buttons">
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ea, vitae quisquam exercitationem molestiae repellendus
-                    perferendis temporibus quos alias ipsa aliquid!
-                  </p>
+                  <p>Sitio web diseñado para la fundación únicas</p>
                   <div class="card-project_buttons">
-                    <a href="" class="deploy"> Deploy </a>
-                    <a href="" class="github"
+                    <a
+                      href="https://fundacionunicas.com/"
+                      class="deploy"
+                      target="_blank"
+                      rel="noopener noreferer"
+                    >
+                      Deploy
+                    </a>
+                    <a
+                      href="https://github.com/jonyc-115/fundacionunicas"
+                      target="_blank"
+                      rel="noopener noreferer"
+                      class="github"
                       ><i class="fa-brands fa-github"></i
                     ></a>
                   </div>
@@ -168,17 +182,24 @@
             <li>
               <figure class="card-project">
                 <div class="card-project_img">
-                  <img src="./assets/prueba_img.png" alt="" />
+                  <img src="./assets/chat_gpt.webp" alt="" />
                 </div>
                 <div class="card-project_text_buttons">
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ea, vitae quisquam exercitationem molestiae repellendus
-                    perferendis temporibus quos alias ipsa aliquid!
-                  </p>
+                  <p>Landing page de ventas para curso de ChatGpt</p>
                   <div class="card-project_buttons">
-                    <a href="" class="deploy"> Deploy </a>
-                    <a href="" class="github"
+                    <a
+                      href="https://udigitalis.com/chat_gpt/"
+                      target="_blank"
+                      rel="noopener noreferer"
+                      class="deploy"
+                    >
+                      Deploy
+                    </a>
+                    <a
+                      href="https://github.com/jonyc-115/landing_chatGpt"
+                      target="_blank"
+                      rel="noopener noreferer"
+                      class="github"
                       ><i class="fa-brands fa-github"></i
                     ></a>
                   </div>
@@ -188,16 +209,19 @@
             <li>
               <figure class="card-project">
                 <div class="card-project_img">
-                  <img src="./assets/prueba_img.png" alt="" />
+                  <img src="./assets/terapia.webp" alt="" />
                 </div>
                 <div class="card-project_text_buttons">
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ea, vitae quisquam exercitationem molestiae repellendus
-                    perferendis temporibus quos alias ipsa aliquid!
-                  </p>
+                  <p>Landing page de ventas para curso de psicología</p>
                   <div class="card-project_buttons">
-                    <a href="" class="deploy"> Deploy </a>
+                    <a
+                      href="https://udigitalis.com/maestria_en_terapia/"
+                      target="_blank"
+                      rel="noopener noreferer"
+                      class="deploy"
+                    >
+                      Deploy
+                    </a>
                     <a href="" class="github"
                       ><i class="fa-brands fa-github"></i
                     ></a>
@@ -237,29 +261,33 @@
             <input
               type="text"
               id="name"
-              name="name"
+              name="nombre"
               required
-              pattern="[A-Za-z\s]+"
-              title="Solo se permiten letras y espacios"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="Solo se permiten letras y espacios en blanco"
             />
             <label for="email">Email</label>
             <input
               type="email"
               id="email"
-              name="email"
+              name="correo"
               required
               pattern="\S+@\S+\.\S+"
               title="Introduce una dirección de correo electrónico válida"
             />
-            <label for="messaege">Mensaje</label>
+            <label for="message">Mensaje</label>
             <textarea
-              name="message"
-              id="messaege"
+              name="mensaje"
+              id="message"
               cols="30"
               rows="10"
               required
+              title="El mensaje debe ser inferior a 250 caracteres"
+              data-pattern="^.{1,255}$"
             ></textarea>
             <input type="submit" value="Enviar" />
+            <div class="form-loader none">Cargando ...</div>
+            <div class="form-response none"><p>Mensaje Enviado</p></div>
           </form>
           <div class="to-up">
             <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
