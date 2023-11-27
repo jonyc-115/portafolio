@@ -632,7 +632,7 @@ a.btn-cv {
   .flex-about {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .flex-about p {
