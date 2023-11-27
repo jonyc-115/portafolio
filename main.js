@@ -77,10 +77,6 @@ d.addEventListener("keyup", (e) => {
     let $input = e.target,
       pattern = $input.pattern || $input.dataset.pattern;
 
-    console.log($input.name);
-
-    console.log($input);
-
     if (pattern) {
       let regex = new RegExp(pattern);
 
@@ -93,4 +89,32 @@ d.addEventListener("keyup", (e) => {
 
 $form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const $loader = d.querySelector(".form-loader");
+  const $response = d.querySelector(".form-response");
+  $loader.classList.remove("none");
+
+  fetch("https://formsubmit.co/ajax/portfolio@jhonnycubillos.online", {
+    method: "POST",
+    body: new FormData(e.target),
+  })
+    .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+    .then((json) => {
+      console.log(json);
+      $loader.classList.add("none");
+      $response.classList.remove("none");
+      $form.reset();
+    })
+    .catch((err) => {
+      console.log(err);
+      let message =
+        err.statusText ||
+        "Ocurrió un error al enviar el mensaje, intenta nuevamente";
+      $response.innerHTML = `<p>Error ${err.status} : ${message}</p>`;
+    })
+    .finally(() =>
+      setTimeout(() => {
+        $response.classList.add("none");
+        $response.innerHTML = "";
+      }, 3000)
+    );
 });
