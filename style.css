@@ -130,7 +130,15 @@ header > .container {
 
 .hero {
   background-color: var(--main-color);
-  padding: 2rem 0;
+}
+
+.hero > .container {
+  min-height: 100vh;
+  display: flex;
+  padding: 3rem 0;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .hero-text {
@@ -150,38 +158,46 @@ header > .container {
 }
 
 .hero-text h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .hero-text h2 {
-  font-size: 1.65rem;
+  font-size: 2rem;
 }
 
 .hero-text_buttons {
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-family: var(--mont);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .hero-text_buttons,
 .social-media {
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
 }
 
 .hero-text_buttons a {
   background-color: var(--call-color);
-  padding: 0.7rem 0.5rem;
+  padding: 0.9rem 1.5rem;
   color: var(--white-color);
   border-radius: 0.3rem;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text_buttons a:hover {
+  box-shadow: 0 0 0.5rem #00000080;
+  scale: 1.02;
 }
 
 a.btn-cv {
   background-color: transparent;
   border: thin solid var(--call-color);
   color: var(--white-color);
-  padding: 0.7rem 0.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 0.3rem;
   font-size: 1rem;
   font-weight: 500;
@@ -189,7 +205,19 @@ a.btn-cv {
 
 .social-media a {
   color: var(--call-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.social-media a:hover {
+  filter: drop-shadow(0 0 0.3rem #00000080);
+  scale: 1.02;
+}
+
+.hero-img {
+  width: 90%;
+  max-width: 23rem;
+  margin: auto;
+  filter: drop-shadow(0 0 1rem #00000061);
 }
 
 /****************************************** ABOUT *******************************************/
@@ -244,6 +272,11 @@ a.btn-cv {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 0.3rem var(--call-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.tech-skills_list li:hover {
+  scale: 1.03;
 }
 
 .tech-skill_img {
@@ -260,7 +293,7 @@ a.btn-cv {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.8rem;
   justify-content: center;
 }
 
@@ -273,9 +306,30 @@ a.btn-cv {
   font-family: var(--mont);
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 0 0.7rem rgba(28, 42, 66, 0.563);
-  max-width: 19rem;
-  min-height: 22rem;
+  max-width: 17rem;
+  min-height: 23rem;
+  box-shadow: 0 0 0.7rem rgba(28, 42, 66, 0.775);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-project:hover {
+  box-shadow: 0 0 1rem rgb(14, 21, 35);
+}
+
+.content-creator {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.creator {
+  margin-bottom: 0.5rem;
+  width: 2rem;
+  filter: drop-shadow(0 0 0.2rem #0000008e);
+  transition: all 0.3s ease-in-out;
+}
+
+.creator:hover {
+  scale: 1.05;
 }
 
 .card-project_buttons {
@@ -304,11 +358,22 @@ a.btn-cv {
   color: var(--white-color);
   border-radius: 0.3rem;
   height: 2.3rem;
+  transition: all 0.3s ease-in-out;
+  border: thin solid #eb7738;
 }
 
 .github {
   color: var(--call-color);
   font-size: 2.3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.github:hover {
+  filter: drop-shadow(0 0 0.3rem #00000080);
+}
+
+.deploy:hover {
+  box-shadow: 0 0 0.4rem #00000080;
 }
 
 /******************************************* CONTACT *******************************************/
@@ -631,7 +696,7 @@ a.btn-cv {
   }
   .flex-about {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
   }
 
