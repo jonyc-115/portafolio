@@ -217,6 +217,7 @@ a.btn-cv {
   width: 90%;
   max-width: 23rem;
   margin: auto;
+  margin-top: 1.5rem;
   filter: drop-shadow(0 0 1rem #00000061);
 }
 
@@ -620,6 +621,7 @@ a.btn-cv {
     left: 0;
     height: 4rem;
     background-color: var(--main-color);
+    z-index: 100;
   }
 
   .header.sticky {
